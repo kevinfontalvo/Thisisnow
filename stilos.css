@@ -1,0 +1,241 @@
+body{
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+.main{
+	display: block;
+}
+.palabras{
+	font-family: Athiti;
+	line-height: 1;
+	position: absolute;
+	width: 70%;
+	height: 40%;
+	text-align: center;
+	font-size: 40px;
+	left: 15%;
+	top: 30%;
+	color: darkslategrey;
+}
+.contenedor{
+	position: absolute;
+	width: 70%;
+	height: 100px;
+	left: 15%;
+	top: 15%;
+	font-size:80px;
+	justify-content: center;
+}
+.boton{
+	width: 250px;
+	height: 250px;
+	background-image: url(assets/19047790_10212014937756073_944516033_n.png);
+	background-size: 50% 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute ;
+	z-index: 100;
+	transition:background-size .6s,transform .3s;
+	transition-timing-function:ease-in;
+	top: 55%;
+	left: 40%;
+
+}
+.boton:hover{
+	background-size: 100% 100%;
+	background-position: center;
+	transform:rotate(-30deg);
+	
+}
+@keyframes botonini{
+	0%,80%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+		
+	}
+}
+@keyframes fadepalabras{
+	0%,75%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		stop;
+	}
+}
+.Fondo{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	position: absolute;
+	z-index: 0;
+	background-image:url(assets/fondo%20pagina-01.jpg);	
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.fondoborroso{
+	Background-image: url(assets/fondo%20pagina-%20borroso.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin: 0px;
+	z-index: 1;
+
+}
+
+.main-section{
+	position: absolute;
+	z-index: 10;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	display:flex;
+	justify-content: center;
+	align-content: center;
+}
+
+h1 {
+	font-family: fuente1;
+	display: flex;
+	color: white;
+	width: 100%;
+	height: 100%;
+	
+}
+.coming {
+	list-style: none;
+	padding-left: 22px;
+	position:relative;
+}
+.message {
+	padding-left: 22px;
+	position:relative;
+
+}
+.botoncuerpo{
+	bottom: 5px;
+	right: 10px;
+}
+.botoncuerpo img{
+	display: block;
+	width: 25%;
+	margin-top: 90px;
+}
+
+@media screen 
+  and (max-width: 373px) 
+	{
+		.palabras{
+			top: 20%;
+			font-size: 22px;
+		}
+	.contenedor{
+	position: absolute;
+	width: 70%;
+	height: 70px;
+	left: 15%;
+	top: 17%;
+	font-size: 25px;
+		}
+		.message-container{
+			width: 100%;
+			height: 100%;
+		}
+
+	.coming {
+	padding-left: 10px;
+	}
+.message {
+	padding-left: 10px;
+}
+.Fondo {
+
+background-image: url(assets/fondo%20pagina%20mobile-01.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+	.fondoborroso{
+		background-image: url(assets/fondo%20pagina%20mobile-borroso.jpg);
+		background-repeat: no-repeat;
+			background-size: 100% 100%;
+
+	}
+	.boton{
+		height: 50%;
+		width:50%;
+		background-size: 70%;
+		top: 45%;
+		left: 25%;
+		
+	}
+		.boton:hover{
+	background-size: 100%;
+	background-position: center;
+	transform:rotate(-30deg);
+		}}
+
+@media screen 
+	and (min-width: 374px)
+   	and (max-width: 567px) 
+{
+	.palabras{
+		top:20%;
+		font-size: 34px;
+		font-size: 27px;
+	}
+	.contenedor{
+		width: 80%;
+		font-size: 35px;
+		left: 10%;
+	}
+	.boton{
+		width: 50%;
+		height: 50%;
+		top: 45%;
+		left: 25%;
+		background-size: 70%;
+	}
+	.boton:hover{
+		background-size: 90%;
+		background-position: center;
+		transform:rotate(-30deg);
+		}
+	.fondoborroso{
+		background-image: url(assets/fondo%20pagina%20mobile-borroso.jpg);
+	}
+	.Fondo {
+
+		background-image: url(assets/fondo%20pagina%20mobile-01.jpg);
+	}
+}
+
+		@media screen 
+	and (min-width: 568px)
+	and (max-width: 1103px)
+	 {
+				.palabras{
+					font-size: 20px;
+					top:20%;
+				}
+				.contenedor{
+					font-size: 45px;
+					left: 15%;
+				}
+				.boton{
+					width: 200px;
+					height: 200px;
+					top: 40%;
+					left: 37%;
+					background-size: 40%;
+				}
+				.boton:hover{
+					background-size: 50%;
+				}
+}
